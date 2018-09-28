@@ -2,7 +2,6 @@
 set -e
 set -u
 set -o pipefail
-#set -x
 
 if [ -z ${UNLOCALIZED_RESOURCES_FOLDER_PATH+x} ]; then
     # If UNLOCALIZED_RESOURCES_FOLDER_PATH is not set, then there's nowhere for us to copy
@@ -116,8 +115,6 @@ then
       XCASSET_FILES+=("$line")
     fi
   done <<<"$OTHER_XCASSETS"
-
-printf '%s\n' "${XCASSET_FILES[@]}"
 
   if [ -z ${ASSETCATALOG_COMPILER_APPICON_NAME+x} ]; then
     printf "%s\0" "${XCASSET_FILES[@]}" | xargs -0 xcrun actool --output-format human-readable-text --notices --warnings --platform "${PLATFORM_NAME}" --minimum-deployment-target "${!DEPLOYMENT_TARGET_SETTING_NAME}" ${TARGET_DEVICE_ARGS} --compress-pngs --compile "${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

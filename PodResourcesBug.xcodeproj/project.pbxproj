@@ -24,6 +24,7 @@
 		4F6F936A215E0A8800FE2DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F6F936D215E0A8800FE2DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F6F936F215E0A8800FE2DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FF6F4A0215E1C900072DEB2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7B1465442776B4CDD56FA650 /* Pods-PodResourcesBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodResourcesBug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodResourcesBug/Pods-PodResourcesBug.debug.xcconfig"; sourceTree = "<group>"; };
 		C238F08006E02B7DC9D18EAD /* libPods-PodResourcesBug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PodResourcesBug.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,6 +52,7 @@
 		4F6F9357215E0A8700FE2DF1 = {
 			isa = PBXGroup;
 			children = (
+				4FF6F4A0215E1C900072DEB2 /* README.md */,
 				4F6F9362215E0A8700FE2DF1 /* PodResourcesBug */,
 				4F6F9361215E0A8700FE2DF1 /* Products */,
 				ACE79FD10D40AA1B02E2EFC9 /* Pods */,
@@ -168,7 +170,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets2.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -351,10 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PodResourcesBug/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fab1n.PodResourcesBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -370,10 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PodResourcesBug/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fab1n.PodResourcesBug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
