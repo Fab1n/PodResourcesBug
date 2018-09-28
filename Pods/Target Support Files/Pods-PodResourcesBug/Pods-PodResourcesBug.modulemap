@@ -1,0 +1,6 @@
+module Pods_PodResourcesBug {
+  umbrella header "Pods-PodResourcesBug-umbrella.h"
+
+  export *
+  module * { export * }
+}

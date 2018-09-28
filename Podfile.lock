@@ -1,0 +1,22 @@
+PODS:
+  - PKHUD (5.1.0)
+
+DEPENDENCIES:
+  - "PKHUD (from `git@github.com:pkluz/PKHUD.git`, commit `44b35e6d615a6261b18fb6f3542b6c1b5a34f0a6`)"
+
+EXTERNAL SOURCES:
+  PKHUD:
+    :commit: 44b35e6d615a6261b18fb6f3542b6c1b5a34f0a6
+    :git: "git@github.com:pkluz/PKHUD.git"
+
+CHECKOUT OPTIONS:
+  PKHUD:
+    :commit: 44b35e6d615a6261b18fb6f3542b6c1b5a34f0a6
+    :git: "git@github.com:pkluz/PKHUD.git"
+
+SPEC CHECKSUMS:
+  PKHUD: 62ea46a1e88c4def1da784878d199bb54c841e3c
+
+PODFILE CHECKSUM: 0eb11281fcb244ebc84acff5af31bbd0eed2420c
+
+COCOAPODS: 1.5.3
