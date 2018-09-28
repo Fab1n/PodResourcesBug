@@ -15,13 +15,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let imageView = UIImageView()
-        imageView.backgroundColor = .green
-        imageView.frame = CGRect(origin: .zero, size: CGSize(width: 200, height: 200))
-        imageView.image = UIImage(named: "checkmark")
-        self.view.addSubview(imageView)
+        let blubbImageView = UIImageView()
+        blubbImageView.backgroundColor = .green
+        blubbImageView.frame = CGRect(origin: .zero, size: CGSize(width: 200, height: 200))
+        blubbImageView.image = UIImage(named: "blubb")
+        self.view.addSubview(blubbImageView)
+
+        let pkhudImageView = UIImageView()
+        pkhudImageView.backgroundColor = .blue
+        pkhudImageView.frame = CGRect(origin: CGPoint(x: 0, y: 200), size: CGSize(width: 200, height: 200))
+        pkhudImageView.image = UIImage(named: "progress_circular")
+        self.view.addSubview(pkhudImageView)
     }
-
-
 }
 
